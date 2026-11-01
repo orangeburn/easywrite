@@ -1,6 +1,6 @@
-# SmartRewrite
+# Rewrite
 
-SmartRewrite 是一个以正式文章为原始母稿、面向不同使用场景进行独立转写的文稿重建框架。
+Rewrite 是 EasyWrite 中负责将正式文章转写为其他表达形式的模块，以正式文章为原始母稿、面向不同使用场景进行独立转写的文稿重建框架。
 
 ## 总纲
 
@@ -19,7 +19,7 @@ SmartRewrite 是一个以正式文章为原始母稿、面向不同使用场景�
 
 ## 工作模型
 
-SmartRewrite 分为两层：
+Rewrite 分为两层：
 
 1. **Core**：定义所有 Renderer 共用的内容来源、Fidelity Contract、概念锚词、内容单元、依赖关系和回溯验收。
 2. **Renderers**：根据具体使用场景，独立完成文稿重建。
@@ -32,7 +32,7 @@ SmartRewrite 分为两层：
 ## 目录结构
 
 ```text
-SmartRewrite/
+Rewrite/
 ├── README.md
 ├── LICENSE
 ├── core/
@@ -79,4 +79,4 @@ Speech Renderer 的目标是：**信息已经完成，真人负责最后表达�
 
 默认只输出目标场景成稿，不输出内部分析、重排方案和检查过程。
 
-SmartRewrite 的目标，是让同一份已经成立的内容，在不同表达场景里继续成立。
+Rewrite 的目标，是让同一份已经成立的内容，在不同表达场景里继续成立。

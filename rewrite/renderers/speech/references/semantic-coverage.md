@@ -9,7 +9,7 @@ Speech Renderer 的 Fidelity 检查必须同时覆盖两个方向：
 
 ## 一、语义覆盖单位
 
-以 SmartRewrite Core 已建立的内容单元和依赖关系为基础进行检查。
+以 Rewrite Core 已建立的内容单元和依赖关系为基础进行检查。
 
 每个有效母稿内容单元在最终 Speech 输出中必须属于以下状态之一：
 

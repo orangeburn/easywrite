@@ -1,4 +1,4 @@
-# SmartRewrite Core Principles
+# Rewrite Core Principles
 
 ## 一、总纲
 

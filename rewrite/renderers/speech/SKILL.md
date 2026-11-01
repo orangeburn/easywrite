@@ -1,6 +1,6 @@
 ---
 name: speech-renderer
-description: 将正式中文文章重建为适合真人表达的 Speech 稿。遵守 SmartRewrite Core，先建立完整演讲路径和最小充分表达单元，再根据场景输出 Teleprompter 或 Stage 形式。默认使用 Teleprompter Mode。
+description: 将正式中文文章重建为适合真人表达的 Speech 稿。遵守 Rewrite Core，先建立完整演讲路径和最小充分表达单元，再根据场景输出 Teleprompter 或 Stage 形式。默认使用 Teleprompter Mode。
 ---
 
 # Speech Renderer
@@ -9,7 +9,7 @@ description: 将正式中文文章重建为适合真人表达的 Speech 稿。�
 
 Speech Renderer 用于把正式文章重建为适合真人表达的演讲稿。
 
-Speech Renderer 遵守 SmartRewrite Core。
+Speech Renderer 遵守 Rewrite Core。
 
 输入必须回到原始母稿，不允许以 TTS Renderer、其他 Renderer 或其他转写结果作为母稿。
 
@@ -41,7 +41,7 @@ Speech Renderer 不固定唯一措辞。
 ```text
 Original Source
 ↓
-SmartRewrite Core
+Rewrite Core
 ↓
 Fidelity Contract
 内容单元
