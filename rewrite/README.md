@@ -39,12 +39,12 @@ Rewrite/
 │   └── principles.md
 └── renderers/
     ├── tts/
-    │   ├── SKILL.md
+    │   ├── WORKFLOW.md
     │   ├── references/
     │   └── agents/
     └── speech/
         ├── README.md
-        ├── SKILL.md
+        ├── WORKFLOW.md
         └── agents/
 ```
 
@@ -58,7 +58,7 @@ TTS Renderer 的目标是：**表达已经完成，声音负责执行。**
 
 它重点处理完整口播措辞、聊天式重建、口语句法和 Audio Delivery。
 
-完整规则见 [`renderers/tts/SKILL.md`](./renderers/tts/SKILL.md)。
+完整规则见 [`renderers/tts/WORKFLOW.md`](./renderers/tts/WORKFLOW.md)。
 
 ## Speech Renderer
 
@@ -66,7 +66,7 @@ Speech Renderer 的目标是：**信息已经完成，真人负责最后表达�
 
 它把 Core 内容重建为一条由最小充分表达单元组成的连续演讲路径，最终文稿可以直接进入提词器使用，同时允许演讲者自然改变措辞、语序和局部连接。
 
-完整规则见 [`renderers/speech/SKILL.md`](./renderers/speech/SKILL.md)。
+完整规则见 [`renderers/speech/WORKFLOW.md`](./renderers/speech/WORKFLOW.md)。
 
 ## 使用方式
 

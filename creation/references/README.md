@@ -1,6 +1,6 @@
 # Creation references 使用约定
 
-本目录存放**辅助资料**，不承担 Creation 的入口路由，也不直接规定文章怎么写。执行规则以 [Creation 入口](../SKILL.md) 和对应的 [methods](../methods/) 为准。
+本目录存放**辅助资料**，不承担 Creation 的入口路由，也不直接规定文章怎么写。执行规则以 [Creation 入口](../WORKFLOW.md) 和对应的 [methods](../methods/) 为准。
 
 ## 目录内容与触发条件
 
@@ -11,7 +11,7 @@
 | [interest-evidence.md](./interest-evidence.md) | 利益分配、激励、经济负担与信息回避的研究边界 | 方法讨论、修订；**结果检查**涉及「受益等于意图」「成本必然零和」「利益一定引发点击」等推断时 | 平常切换叙事视角时机械加载；以理论资料决定话题是否值得写或代替事实查证 |
 | [verdict-evidence.md](./verdict-evidence.md) | 情绪与负面标题的点击研究及外推边界 | 解释／修订裁决法，或检查「激烈判决／负面表达必然有效」时 | 取代某个读者群体的真实情绪证据 |
 | [absurdity-evidence.md](./absurdity-evidence.md) | 荒诞、幽默、视觉修辞与标题具体度的研究边界 | 解释／修订现场法，或检查「荒诞必然好笑／具象封面必然高点击」等推断时 | 代替具体事件事实核验或艺术表达评价 |
-| [notion-original.md](./notion-original.md) | 创建 GitHub Skill 时的 Notion 原文快照 | 追溯历史版本、核对迁移内容时 | 当作最新指令，覆盖 `SKILL.md` 或 `methods/` |
+| [notion-original.md](./notion-original.md) | 创建 GitHub Skill 时的 Notion 原文快照 | 追溯历史版本、核对迁移内容时 | 当作最新指令，覆盖 `WORKFLOW.md` 或 `methods/` |
 
 ## 读取原则
 

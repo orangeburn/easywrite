@@ -43,6 +43,6 @@ Speech Renderer 必须执行双向语义覆盖检查：
 
 完整规则见 [`references/semantic-coverage.md`](./references/semantic-coverage.md)。
 
-总入口见 [`SKILL.md`](./SKILL.md)。
+总入口见 [`WORKFLOW.md`](./WORKFLOW.md)。
 
 Speech Renderer 必须遵守 [`../../core/principles.md`](../../core/principles.md)。
