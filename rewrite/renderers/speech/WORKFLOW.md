@@ -1,7 +1,3 @@
----
-name: speech-renderer
-description: 将正式中文文章重建为适合真人表达的 Speech 稿。遵守 Rewrite Core，先建立完整演讲路径和最小充分表达单元，再根据场景输出 Teleprompter 或 Stage 形式。默认使用 Teleprompter Mode。
----
 
 # Speech Renderer
 
