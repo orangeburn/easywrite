@@ -2,7 +2,7 @@
 
 原始页面：https://app.notion.com/p/40b84e8891bf8101b462-e168347a867a
 
-2026-11-02 迁移时的完整正文，仅将 Notion 的 HTML 加粗标签转换为 Markdown。此文件用于追溯迁移内容，不再作为日常调用入口；请使用 [../SKILL.md](../SKILL.md)。
+2026-11-02 迁移时的完整正文，仅将 Notion 的 HTML 加粗标签转换为 Markdown。此文件用于追溯迁移内容，不再作为日常调用入口；请使用 [Creation 当前工作流](../WORKFLOW.md)。
 
 ---
 

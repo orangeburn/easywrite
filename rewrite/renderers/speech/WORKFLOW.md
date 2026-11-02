@@ -3,7 +3,9 @@
 
 ## 一、任务定义
 
-Speech Renderer 用于把正式文章重建为适合真人表达的演讲稿。
+Speech Renderer 用于把正式文章重建为允许真人自然换词、保持信息和关系稳定的表达稿，可用于提词器或现场演讲。真人录制并不自动进入 Speech；需要完整措辞、直接朗读的稿件使用 TTS。
+
+新生成稿件时执行下方协议；检查或局部修订已有 Speech 稿时按 [Rewrite 入口](../../README.md) 限定范围，对照母稿使用相关 Mode 与语义覆盖规则，不强制重新生成全文。
 
 Speech Renderer 遵守 Rewrite Core。
 
