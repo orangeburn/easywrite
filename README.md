@@ -1,24 +1,32 @@
 # EasyWrite
 
-面向微信公众号与多场景表达的写作工具集。包含两个相互独立的工作模块：
+**只记一个名字：`easywrite`。** 创作、文章审查、口播/演讲转写集中在同一个 Skill 下；不会因为调用 EasyWrite 而自动执行所有阶段。
 
-- [Creation：观点池 → 选题角度 → 文章和标题封面](./creation/SKILL.md)
-- [Rewrite：文章 → 多场景形式转写](./rewrite/README.md)
-  - [TTS Renderer](./rewrite/renderers/tts/SKILL.md)
-  - [Speech Renderer](./rewrite/renderers/speech/SKILL.md)
+## 唯一入口
 
-## 调用方式
+[**SKILL.md**](./SKILL.md) — `name: easywrite`。安装时将**仓库根目录**作为一个完整 Skill 文件夹，而不是单独安装 `creation/` 或两个 Renderer。安装后使用 `$easywrite`，再用自然语言说明任务，例如：
 
-**创作**：当作者已完成自由表达并发出明确指令后，读取 `creation/SKILL.md`；先扫描完整原始观点，借助不同创作方法探索候选角度并核验证据，由作者选定角度后，再根据要求组织文章、标题和封面。方法只是创作工具，不代表能够预测点击率。五种创作方法各自存放在 `creation/methods/`。
+```text
+$easywrite 从下面这些观点里找切入角度
+$easywrite 审查《文章标题》是否适合发布
+$easywrite 把下面的文章转成播客口播稿
+```
 
-**转写**：提供已完成的原始母稿，指定 TTS 或 Speech Renderer，遵守 Rewrite 的 [Core 原则](./rewrite/core/principles.md)。不同 Renderer 直接读取原稿，互不依赖。创作和转写之间不存在自动执行或默认串联。
+在可访问此仓库的 ChatGPT 对话中，也可以直接说“用 easywrite 审查这篇文章”；是否自动识别为安装 Skill 取决于客户端是否已连接/安装，**仓库本身不等于已安装**。
 
-## 迁移来源
+## 内部模块
 
-- 创作 Skill 来源：[Notion 原文档](https://app.notion.com/p/40b84e8891bf8101b462-e168347a867a)，[迁移快照](./creation/references/notion-original.md)。GitHub 是后续维护主源。
-- Rewrite 模块源自 [orangeburn/SmartRewrite](https://github.com/orangeburn/SmartRewrite)，完整复制其 `main` 分支文件到 `rewrite/`；原仓库保持不变。
-- 创作方法当前处于逐步设计阶段。已列出的点击机制是工作假设，不应宣称得到普遍因果证明。
+- [Creation](./creation/WORKFLOW.md)：观点池 → 不同叙事角度 → 作者选定后组织文章、标题与封面。五种探索方法和 References 按需加载，不声称能预测点击率。
+- [Review](./review/WORKFLOW.md)：按 [微信公众号商业写作发布前审查框架（Notion 完整快照）](./review/framework.md) 审查传播、观点、商业价值和发布风险。12 项内部检查，输出只保留实际问题；Notion 在线可用时优先读取最新原文。
+- [Rewrite](./rewrite/README.md)：从完整正式原稿出发，经 [Core](./rewrite/core/principles.md) 分别生成 [TTS 口播稿](./rewrite/renderers/tts/WORKFLOW.md) 或 [Speech 演讲稿](./rewrite/renderers/speech/WORKFLOW.md)。
+
+## 来源与版本
+
+- Creation 源于 [Notion 原文](https://app.notion.com/p/40b84e8891bf8101b462e168347a867a)，[历史快照](./creation/references/notion-original.md)。当前维护以 GitHub 为准。
+- Review 主框架源于 [Notion「草稿」数据库](https://app.notion.com/p/3e784e8891bf809e879ec510d3d8c09d)，仓库保留完整正文快照；在线审查优先以现行 Notion 版为准。
+- Rewrite 源自 [orangeburn/SmartRewrite](https://github.com/orangeburn/SmartRewrite)。为实现单 Skill 安装，内层 Skill 清单改为 `WORKFLOW.md`，工作流规则和素材内容保留，原独立仓库未修改。
+- 非用户明确要求时，不默认依次运行 Creation → Review → Rewrite；DBS 仅在明确请求或专项规则要求时通过其线上主路由真实执行。
 
 ## LICENSE
 
-保留原仓库根目录 LICENSE；Rewrite 模块亦保留原项目 LICENSE。
+保留根目录 LICENSE 与 Rewrite 模块 LICENSE。
