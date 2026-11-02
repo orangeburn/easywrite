@@ -15,7 +15,6 @@ $easywrite 从下面这些观点里找切入角度
 用 ew 把这篇文章转成可以直接念的播客稿
 用 ew 把这篇文章转成上台演讲用的稿子
 用 ew 对照原文检查这份口播稿有没有改变意思
-只用 DBS 检查这个大纲
 ```
 
 在能访问本仓库的对话中也可提供仓库链接并说明任务；仓库可访问不等于客户端已安装，能否自动发现取决于客户端的 Skill 支持。
@@ -33,7 +32,6 @@ EasyWrite 先确认**动作、材料阶段、处理范围和已确认事项**，
 | 需要措辞完整、可以直接朗读或合成语音的稿件 | [TTS](./rewrite/renderers/tts/WORKFLOW.md) | 从完整正式母稿生成口播稿 |
 | 需要真人可自然换词的提词器稿或现场演讲稿 | [Speech](./rewrite/renderers/speech/WORKFLOW.md) | 按场景选择 Teleprompter 或 Stage |
 | 检查、修订已有转写稿 | [Rewrite](./rewrite/README.md) | 对照母稿检查忠实度与场景适配，按授权范围修订 |
-| 只用 DBS／联合审查 | [官方 DBS 主路由](https://github.com/dontbesilent2025/dbskill/blob/main/skills/dbs/SKILL.md) | 只用 DBS 时不额外执行 Review；联合审查才先 Review 后 DBS |
 
 “用 ew 跑一下”接在大纲或稿件后，默认检查当前材料。观点仍在自由讨论时不自动选题；已有角度时不重新选题；检查不自动改稿；只改标题不自动生成封面；创作完成不自动进入审查或转写。
 
@@ -54,7 +52,6 @@ EasyWrite 先确认**动作、材料阶段、处理范围和已确认事项**，
 - Creation 源于 [Notion 原文](https://app.notion.com/p/40b84e8891bf8101b462e168347a867a)，保留[迁移快照](./creation/references/notion-original.md)供追溯。
 - Review 源于 [Notion 历史框架](https://app.notion.com/p/3e784e8891bf809e879ec510d3d8c09d)，现以本仓库框架为准。
 - Rewrite 源自 [orangeburn/SmartRewrite](https://github.com/orangeburn/SmartRewrite)，已整合为内部工作流；后续维护在本仓库完成。
-- DBS 为独立专项工具，仍从其官方线上仓库真实调用；普通 ew 任务不默认调用 DBS。
 
 ## LICENSE
 
